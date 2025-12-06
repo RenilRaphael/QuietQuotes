@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import *
+from PyQt6.QtWidgets import QDialog, QFormLayout, QComboBox, QPushButton, QFontComboBox, QSpinBox, QColorDialog, QWidget, QVBoxLayout, QLabel, QApplication
 from PyQt6.QtCore import Qt, pyqtSignal,QTimer
 import quotespicker as qp
 
@@ -183,5 +183,6 @@ app= QApplication([])
 main_window=M_window()
 
 app.exec()
+
 
 
