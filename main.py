@@ -47,7 +47,7 @@ class Settings_window(QDialog):
         self.resetdef.clicked.connect(lambda: self.save_f(1))
 
         self.save_button=QPushButton("Save",self)
-        self.close_button=QPushButton("Close \"widget\"",self)
+        self.close_button=QPushButton("Close QuietQuotes",self)
         fbox.addWidget(self.save_button)
 
         self.cancel=QPushButton("Cancel",self)
@@ -127,8 +127,8 @@ class M_window(QWidget):
         self.author.setAlignment(Qt.AlignmentFlag.AlignRight)
         self.setLayout(vbox)
         
-        self.button1=QPushButton("button1",self)
-        self.button1.move(400,0)
+        self.button1=QPushButton("Settings",self)
+        self.button1.setGeometry(400,0,70,25)
         self.button1.clicked.connect(self.openSettings)
         
         self.q_countdown= QTimer()
@@ -183,6 +183,7 @@ app= QApplication([])
 main_window=M_window()
 
 app.exec()
+
 
 
 
